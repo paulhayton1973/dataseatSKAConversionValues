@@ -21,7 +21,7 @@ The Weekday is taken from NSCalendarUnitWeekday so Sunday=1,Monday=2,Tuesday=3,W
 The example code includes 2 methods.
 
 * registerAppOpen : This should be called when the App is first opened and will record the Day of the week in the lower 3 bits of the conversion value.
-* updateConversionValue : This should be called with a value between 0 and 7 inclusive where the higher the value given the better the indication of good LTV.
+* updateConversionValue : This should be called with a value between 0 and 7 inclusive where the higher the value given the better the indication of good LTV. These will be different for each advertiser depending on what events are the best predictors of LTV
 
 e.g. For a game you might have :
 
