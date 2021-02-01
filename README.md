@@ -10,7 +10,7 @@ The SkAdNetwork Conversion Value is set by the advertiser App. The Dataseat reco
 
 | Top 3 bits | Lower 3 bits | 
 | ------------- | --------------- | 
-| value representing user behaviour  | 1-7 representing the day of the weeek |
+| value representing user behaviour  | 1-7 representing the day of the week |
 
 The code in this repository gives examples of utility functions that can be used in an iOS App to set the conversion value. The conversion value should only be updated within the first 24 hours after the install.
 
