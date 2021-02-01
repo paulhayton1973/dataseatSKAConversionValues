@@ -2,11 +2,11 @@
 
 ## Background
 
-The SkAdNetwork framework provided by Apple allows Ad-networks to track installs a in privacy centric manner. It allows advertisers to record a conversion value to assist in measuring the value of users. Dataseat recommend that these 2 values are used together to maximise LTV prediction and optimisation.
+The SkAdNetwork framework provided by Apple allows Ad-networks to track installs in a privacy centric manner. It allows advertisers to record a conversion value to assist in measuring the value of users. Dataseat recommend that these 2 values are used together to maximise LTV prediction and optimisation.
 
 ## Method
 
-The SkAdNetwork Conversion Value is set by the advertiser App. The Dataseat recomendation is that the conversion value is split and used to store 2 pieces of information - the best event reached by the user for prediction of LTV and the day of the week the App was first launched.
+The SkAdNetwork Campaign ID is set by the Ad-network; the Conversion Value is set by the advertiser App. The Dataseat recomendation is that the conversion value is split and used to store 2 pieces of information rather than one : the best event reached by the user for prediction of LTV and the day of the week the App was first launched.
 
 | Top 3 bits | Lower 3 bits | 
 | ------------- | --------------- | 
