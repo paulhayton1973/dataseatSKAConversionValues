@@ -25,9 +25,9 @@ The example code includes 2 methods.
 
 e.g. For a game you might have :
 
-0 = First Launch
-1 = Level X complete
-2 = Level Y complete
+* 0 = First Launch
+* 1 = Level X complete
+* 2 = Level Y complete
 3 = Purchase $1.99
 4 = Purchase $4.99
 5 = Purchase medium $9.99
