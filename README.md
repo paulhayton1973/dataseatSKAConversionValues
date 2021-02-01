@@ -28,20 +28,20 @@ e.g. For a game you might have :
 * 0 = First Launch
 * 1 = Level X complete
 * 2 = Level Y complete
-3 = Purchase $1.99
-4 = Purchase $4.99
-5 = Purchase medium $9.99
-6 = Purchase high total $19.99
-7 = Purchase highest total value $49.99
+* 3 = Purchase $1.99
+* 4 = Purchase $4.99
+* 5 = Purchase medium $9.99
+* 6 = Purchase high total $19.99
+* 7 = Purchase highest total value $49.99
 
 For a retail App, you might have :
 
-0 = First Launch
-1 = Registration
-2 = Product Viewed
-3 = 3 Products viewed
-4 = Item placed in basket
-5 = Purchase made of value up to $9.99
-6 = Purchase made of value up to $19.99
-7 = Purchase made of value up to $49.99
+* 0 = First Launch
+* 1 = Registration
+* 2 = Product Viewed
+* 3 = 3 Products viewed
+* 4 = Item placed in basket
+* 5 = Purchase made of value up to $9.99
+* 6 = Purchase made of value up to $19.99
+* 7 = Purchase made of value up to $49.99
 
