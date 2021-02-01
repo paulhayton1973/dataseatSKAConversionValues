@@ -11,14 +11,17 @@ class SKAConversionValues: NSObject {
 
     static func registerAppOpen() {
         if #available(iOS 14.0, *) {
-            var cal = Calendar(identifier: .gregorian)
-            cal.timeZone = TimeZone(identifier: "UTC")!
-            let dateComponents = cal.dateComponents([.weekday], from: Date())
-            let weekDay = dateComponents.weekday!
             let defaults = UserDefaults.standard
-            SKAdNetwork.updateConversionValue(weekDay & 0x07)
-            defaults.setValue(weekDay, forKey: "SKAConversionValue")
-            defaults.synchronize()
+            let currentValue = defaults.integer(forKey: "SKAConversionValue")
+            if (currentValue == 0) {
+                var cal = Calendar(identifier: .gregorian)
+                cal.timeZone = TimeZone(identifier: "UTC")!
+                let dateComponents = cal.dateComponents([.weekday], from: Date())
+                let weekDay = dateComponents.weekday!
+                SKAdNetwork.updateConversionValue(weekDay & 0x07)
+                defaults.setValue(weekDay, forKey: "SKAConversionValue")
+                defaults.synchronize()
+            }
         }
     }
     

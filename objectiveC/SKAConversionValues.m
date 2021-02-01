@@ -15,14 +15,17 @@
 + (void)registerAppOpen {
     
     if (@available(iOS 14.0, *)) {
-        NSCalendar *cal = [NSCalendar currentCalendar];
-        [cal setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-        NSDateComponents *dateComponents = [cal components:NSCalendarUnitWeekday fromDate:[NSDate date]];
-        long weekday = [dateComponents weekday];
-        [SKAdNetwork updateConversionValue:weekday & 0x07];
-        // Store this value so we can update it.
-        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLong:weekday] forKey:@"SKAConversionValue"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        NSInteger currentValue = [[NSUserDefaults standardUserDefaults] integerForKey:@"SKAConversionValue"];
+        if (currentValue == 0) {
+            NSCalendar *cal = [NSCalendar currentCalendar];
+            [cal setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+            NSDateComponents *dateComponents = [cal components:NSCalendarUnitWeekday fromDate:[NSDate date]];
+            long weekday = [dateComponents weekday];
+            [SKAdNetwork updateConversionValue:weekday & 0x07];
+            // Store this value so we can update it.
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLong:weekday] forKey:@"SKAConversionValue"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
     }
 }
 
