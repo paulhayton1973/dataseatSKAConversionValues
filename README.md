@@ -8,7 +8,7 @@ The SkAdNetwork framework provided by Apple allows Ad-networks to track installs
 
 The SkAdNetwork Campaign ID is set by the Ad-network; the Conversion Value is set by the advertiser App. The Dataseat recomendation is that the conversion value is split and used to store 2 pieces of information rather than one : the best event reached by the user for prediction of LTV and the day of the week the App was first launched.
 
-N.B. You can use the top 3 bits in any way that you wish - it's your opportunity to gather the best indicators of LTV possible.  The lower 3 bits MUST be implemented according to the key below to represent day of the week of first launch - Sunday=1 -> Saturday=7
+**N.B. You can use the top 3 bits in any way that you wish ** - it's your opportunity to gather the best indicators of LTV possible.  The lower 3 bits ** MUST ** be implemented according to the key below to represent day of the week of first launch - Sunday=1 -> Saturday=7
 
 | Top 3 bits | Lower 3 bits | 
 | ------------- | --------------- | 
