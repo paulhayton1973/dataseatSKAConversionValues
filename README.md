@@ -13,3 +13,5 @@ The SkAdNetwork Conversion Value is set by the advertiser App. The Dataseat reco
 | value representing user behaviour  | 1-7 representing the day of the weeek |
 
 The code in this repository gives examples of utility functions that can be used in an iOS App to set the conversion value. The conversion value should only be updated within the first 24 hours after the install.
+
+The Weekday is taken from NSCalendarUnitWeekday so Sunday=1,Monday=2,Tuesday=3,Wednesday=4,Thursday=5,Friday=6,Saturday=7.  0 for the lower 3 bits would indicate this hasn't been set.
